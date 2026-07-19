@@ -1,0 +1,156 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "good morning", "good afternoon", "is anyone there", "hey there", "howdy", "greetings"],
+      "responses": ["Hello! I'm the Student Support Assistant. How can I help you today?", "Hi there! Ask me about admissions, exams, fees, library, hostel, or anything else related to campus support."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "goodbye", "see you later", "talk to you later", "exit", "quit", "close chat"],
+      "responses": ["Goodbye! Feel free to come back if you have more questions.", "Take care! Wishing you all the best with your studies."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thanks", "thank you", "that helps", "thanks a lot", "appreciate it", "great, thanks"],
+      "responses": ["You're welcome! Let me know if there's anything else you need.", "Happy to help! Good luck!"]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "how do I apply for admission", "what is the admission process", "when does admission open",
+        "eligibility criteria for admission", "how to get admission in this college",
+        "documents required for admission", "admission deadline", "how to apply online"
+      ],
+      "responses": [
+        "Admissions are usually processed online through the student portal. You'll need your previous academic transcripts, ID proof, and passport-size photographs. Check the Admissions Office page for current deadlines.",
+        "To apply for admission, visit the college admissions portal, fill in the application form, upload required documents, and pay the application fee before the deadline."
+      ]
+    },
+    {
+      "tag": "exams",
+      "patterns": [
+        "when is my exam", "exam schedule", "how do I check my exam timetable",
+        "exam date sheet", "when do exams start", "final exam schedule",
+        "how to apply for revaluation", "supplementary exam", "exam hall ticket", "admit card"
+      ],
+      "responses": [
+        "The exam timetable is published on the college website and student portal at least two weeks before exams begin. Your admit card can be downloaded from the same portal.",
+        "For revaluation or supplementary exam queries, please contact the Examination Cell, or check the 'Exams' section on the student portal."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "how do I pay my fees", "fee structure", "fee payment deadline",
+        "late fee fine", "scholarship information", "how to apply for scholarship",
+        "fee receipt", "installment option for fees", "refund policy"
+      ],
+      "responses": [
+        "Fees can be paid online via the student portal using net banking, UPI, or card payment. A downloadable receipt is generated after successful payment.",
+        "For scholarship details and eligibility, check the Financial Aid section of the portal or contact the Accounts Office."
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "library timings", "how to borrow a book", "library membership",
+        "renew library book", "library fine", "e-library access",
+        "how many books can I issue", "library card"
+      ],
+      "responses": [
+        "The library is open from 8 AM to 8 PM on weekdays. You can borrow up to 4 books at a time using your student ID card.",
+        "You can renew books online through the library portal before the due date to avoid late fines."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "hostel admission", "how to apply for hostel", "hostel fees",
+        "hostel rules", "room allotment", "hostel mess timings", "change hostel room",
+        "hostel complaint"
+      ],
+      "responses": [
+        "Hostel applications open along with admissions. You can apply through the student portal under 'Hostel Services' and choose your room preference.",
+        "For hostel-related complaints or room changes, contact the Warden's office or raise a ticket on the student portal."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "how do I register for courses", "course registration deadline",
+        "how to drop a course", "add or drop courses", "course catalog",
+        "credit requirements", "elective course options", "prerequisites for a course"
+      ],
+      "responses": [
+        "Course registration is done through the student portal at the start of each semester. Make sure to check prerequisites before registering.",
+        "You can add or drop a course within the first two weeks of the semester without academic penalty."
+      ]
+    },
+    {
+      "tag": "faculty_contact",
+      "patterns": [
+        "how do I contact my professor", "faculty office hours",
+        "professor email", "department contact", "how to reach my advisor",
+        "academic advisor contact"
+      ],
+      "responses": [
+        "Faculty contact details and office hours are listed on the department page of the college website.",
+        "Your academic advisor's details are available on your student dashboard under 'My Advisor'."
+      ]
+    },
+    {
+      "tag": "timetable",
+      "patterns": [
+        "class timetable", "when is my next class", "today's schedule",
+        "class timings", "lecture schedule", "lab schedule"
+      ],
+      "responses": [
+        "Your personalized class timetable is available on the student portal under 'My Schedule'.",
+        "Check the 'Timetable' tab on the portal for your daily class and lab schedule."
+      ]
+    },
+    {
+      "tag": "counseling",
+      "patterns": [
+        "I need mental health support", "I am feeling stressed", "counseling services",
+        "I feel anxious about exams", "I need someone to talk to", "student wellness center",
+        "I am feeling overwhelmed", "mental health helpline"
+      ],
+      "responses": [
+        "I'm sorry you're feeling this way. The Student Wellness Center offers free and confidential counseling — you can book a session through the portal or walk in during working hours.",
+        "You're not alone. Please reach out to the campus counseling center, or speak with a trusted faculty member or peer support group. If it's urgent, contact campus emergency services immediately."
+      ]
+    },
+    {
+      "tag": "it_support",
+      "patterns": [
+        "I forgot my portal password", "wifi not working", "email account issue",
+        "how to reset password", "IT helpdesk", "login problem", "portal not loading"
+      ],
+      "responses": [
+        "You can reset your password using the 'Forgot Password' link on the login page, or contact the IT Helpdesk for further assistance.",
+        "For technical issues like Wi-Fi or portal access, please raise a ticket with the IT Helpdesk through the support page."
+      ]
+    },
+    {
+      "tag": "grievance",
+      "patterns": [
+        "how do I file a complaint", "grievance redressal", "I want to report an issue",
+        "complaint against faculty", "anti-ragging complaint", "how to raise a grievance"
+      ],
+      "responses": [
+        "You can file a formal grievance through the 'Grievance Redressal' section on the student portal. All complaints are handled confidentially.",
+        "For urgent or sensitive complaints, you may also contact the Grievance Redressal Cell directly via email or in person."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understood that. Could you rephrase your question? You can ask me about admissions, exams, fees, library, hostel, courses, timetable, counseling, or IT support.",
+        "Sorry, I didn't quite get that. Try asking about topics like exams, fees, hostel, or library services."
+      ]
+    }
+  ]
+}

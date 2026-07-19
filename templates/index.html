@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Assist — Student Support Chatbot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="board">
+
+  <!-- Directory rail -->
+  <aside class="directory">
+    <div class="directory-head">
+      <span class="badge-dot"></span>
+      <div>
+        <h1>Campus Assist</h1>
+        <p class="sub">Student Support Desk</p>
+      </div>
+    </div>
+
+    <p class="directory-label">Directory — tap a desk</p>
+    <ul class="directory-list" id="quickTopics">
+      <li data-msg="What documents do I need for admission?"><span class="room">01</span>Admissions</li>
+      <li data-msg="When is my exam timetable released?"><span class="room">02</span>Exams &amp; Grades</li>
+      <li data-msg="How do I pay my fees online?"><span class="room">03</span>Fees &amp; Scholarships</li>
+      <li data-msg="What are the library timings?"><span class="room">04</span>Library</li>
+      <li data-msg="How do I apply for a hostel room?"><span class="room">05</span>Hostel Services</li>
+      <li data-msg="How do I register for courses this semester?"><span class="room">06</span>Course Registration</li>
+      <li data-msg="I need mental health counseling support"><span class="room">07</span>Wellness &amp; Counseling</li>
+      <li data-msg="My portal password isn't working"><span class="room">08</span>IT Helpdesk</li>
+      <li data-msg="How do I file a grievance?"><span class="room">09</span>Grievance Cell</li>
+    </ul>
+
+    <div class="directory-foot">
+      <p>Open desks, one assistant.</p>
+      <p class="tiny">Responses are auto-generated. For urgent matters, contact the relevant office directly.</p>
+    </div>
+  </aside>
+
+  <!-- Chat pane -->
+  <main class="deskpane">
+    <header class="deskpane-head">
+      <div>
+        <p class="eyebrow">Now serving</p>
+        <h2 id="deskTitle">General Inquiries</h2>
+      </div>
+      <div class="status-chip"><span class="dot"></span>Assistant online</div>
+    </header>
+
+    <div class="ticket-strip" id="ticketStrip">
+      <span>TICKET #<span id="ticketNo">0001</span></span>
+      <span class="divider">·</span>
+      <span id="ticketIntent">awaiting query</span>
+    </div>
+
+    <div class="chat-scroll" id="chatScroll">
+      <div class="msg bot">
+        <div class="msg-bubble">
+          Hello — I'm the Campus Assist chatbot. Ask about admissions, exams, fees, hostel, library, courses, or wellness support. You can also tap a desk on the left.
+        </div>
+      </div>
+    </div>
+
+    <form class="composer" id="composerForm" autocomplete="off">
+      <input type="text" id="messageInput" placeholder="Type your question…" maxlength="300" required>
+      <button type="submit" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+  </main>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
