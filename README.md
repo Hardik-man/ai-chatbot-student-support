@@ -1,4 +1,7 @@
 # 🎓 Campus Assist — AI Chatbot for Student Support Services
+🔗 **[Try it live](https://ai-chatbot-student-support.onrender.com)**
+
+*Note: hosted on a free tier — the app may take up to a minute to wake up if it's been inactive.*
 
 An intelligent, rule-based/NLP chatbot that answers common student queries about **admissions, exams, fees, hostel, library, courses, timetables, IT support, grievances, and wellness/counseling** — built as a full-stack internship project with a Flask backend, a TF-IDF/cosine-similarity NLP engine, and a custom chat UI.
 
